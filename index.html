@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>アルバイトカウント</title>
+</head>
+<body>
+    <div class="container">
+    <h1>アルバイト<i class="fas fa-coins"></i>カウント<i class="fas fa-history"></i></h1>
+    <form>
+        <ul>
+            <li class="list"> <span>1</span>　→　 単発バイト<i class="fas fa-business-time"></i></li>
+            <li class="list"> <span>2</span>　→　dikkerバイト<i class="fas fa-gamepad"></i></li>
+            <li class="list"> <span>3</span>　→　レンタカーバイト<i class="fas fa-car"></i></li>
+        </ul>
+        <input id="date" type="text" placeholder="上記のバイト番号を入力してください。">
+        <input id="btn" class="add" type="button" value="出勤">
+    </form>
+    
+    <div class="resultBox">
+        <div class="partTime">
+            <div class="tanpatu">単発バイト：<span class="partTime1_result"></span>　回</div>
+            <p><span id="Yen1_result" class="txtCal1"></span>円</p>
+        </div>
+        <div class="partTime">
+            <div class="dikker">dikker：<span class="partTime2_result"></span>　回</div>
+            <p><span id="Yen2_result" class="txtCal2"></span>円</p>
+        </div>
+        <div class="partTime">
+            <div class="rentCar">レンタカーバイト：<span class="partTime3_result"></span>　回</div>
+            <p><span id="Yen3_result" class="txtCal3"></span>円</p>
+        </div>
+        <div class="partTime_total">
+            <div>Total: <span id="total"></span>　円</div>
+            <div class="btns">
+                <button id="total_btn">合計</button>
+                <button id="reset_btn">リセット</button>
+            </div>
+        </div>
+   
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
